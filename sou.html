@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+
+<body>
+    <input type="text" id="te">
+</body>
+<script type="text/javascript">
+    var te = document.getElementById('te');
+    // te.onkeyup = function() {
+    //     var req = new XMLHttpRequest();
+    //     req.open('get', 'baidu.php?keyword=' + te.value, true);
+    //     req.send(null);
+    //     req.onreadystatechange = function() {
+    //         if (req.readyState == 4) {
+    //             if (req.status == 200) {
+    //                 // var rpn = eval('(' + req.responseText + ')').s;
+    //                 console.log(req.responseText);
+    //             }
+    //         }
+    //     }
+    // }
+    te.onkeyup = function() {
+        var req = new XMLHttpRequest();
+        req.open('get', 'baidu.php?keyword=' + te.value, true);
+        req.send(null);
+        req.onreadystatechange = function() {
+            if (req.readyState == 4) {
+                if (req.status == 200) {
+                    // var rpn = eval('(' + req.responseText + ')').s;
+                    console.log(req.responseText);
+                    // var result = '';
+                    // for (i = 0; i < rpn.length; i++) {
+                    //     result += '<div>' + rpn[i] + '</div>';
+                    // }
+                    // ds.innerHTML = result;
+                }
+            }
+        }
+    }
+</script>
+
+</html>

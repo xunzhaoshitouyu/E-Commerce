@@ -1,0 +1,57 @@
+﻿body,
+div,
+ul,
+ol,
+li,
+a,
+p,
+img,
+span,
+input,
+table,
+tr,
+td,
+h2,
+h1,
+h3,
+h4,
+h5,
+h6 {
+    margin: 0;
+    padding: 0;
+}
+
+
+/*body {
+    font-size: 14px;
+    font-family: "微软雅黑", arial, tahoma;
+}*/
+
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: #666;
+}
+
+
+/*京东body样式*/
+
+body {
+    min-width: 1210px;
+    font: 12px/150% Arial, Verdana, "\5b8b\4f53";
+}
+
+input {
+    outline: none;
+}
+
+.clr {
+    clear: both;
+}
+
+a:hover {
+    color: #C81623;
+}

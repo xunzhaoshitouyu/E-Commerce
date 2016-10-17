@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+	</head>
+	<body>
+	</body>
+	<script type="text/javascript">
+	function getout(obt,obr){
+		var rbtim1=null;
+		var rbnum=getrbl(rbsp[rbn],'left').slice(0,-2);
+		rbtim1=setInterval(function(){
+			rbnum++;
+			obt.style.left=rbnum+'px';
+			if(rbnum>=3){
+				obt.style.left='3px';
+				obr.style.borderRadius='3px 0 0 3px';
+				obt.style.borderRadius='0';
+				clearInterval(rbtim1);
+			}
+		},2)
+	}
+		
+		
+	function getinnr(){
+		for(i=0;i<rbl.length;i++){
+			if(rbl[i]==this){
+				var rbnum=getrbl(rbsp[i],'left').slice(0,-2);
+				rbn=i;
+				rbtim=setInterval(function(){
+					rbas[rbn].style.borderRadius='0';
+					rbsp[rbn].style.borderRadius='3px 0 0 3px';
+					rbnum--;
+					rbsp[rbn].style.left=rbnum+'px';
+					if(rbnum<=-62){
+						rbsp[rbn].style.left='-62px';
+						clearInterval(rbtim);
+					}
+				},2)
+			}
+		}
+	}
+	</script>
+</html>

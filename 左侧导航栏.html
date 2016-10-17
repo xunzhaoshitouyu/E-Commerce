@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+
+<body>
+
+</body>
+
+</style>
+top: 100px; } #lbfix div { width: 30px; height: 30px; font-size: 14px; text-align: center; line-height: 30px; cursor: pointer; color: #666; margin-top: 5px; background: #c81623 url(img/xiazai.png) 0 0 no-repeat; }
+</style>
+</head>
+
+<body style="height:3000px;">
+    <div id="lbfix">
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+    </div>
+</body>
+
+<script>
+    var sct = document.documentElement.scrollTop || document.body.scrollTop;
+    debuger;
+    var ds = document.getElementById('lbfix').children;
+    for (i = 0; i < ds.length; i++) {
+        ds[i].onclick = function() {
+            for (i = 0; i < ds.length; i++) {
+                if (ds[i] == this) {
+                    var dsh = ds[i].offsetTop;
+                    console.log(dsh);
+                }
+            }
+        }
+    }
+</script>
+
+</html>

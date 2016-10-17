@@ -1,0 +1,223 @@
+<!doctype html>
+<html lang="en">
+
+	<head>
+		<meta charset="UTF-8" />
+		<title>Document</title>
+		<style type="text/css">
+			* {
+				margin: 0;
+				padding: 0;
+			}
+			
+			ul {
+				width: 250px;
+				overflow: hidden;
+			}
+			
+			li {
+				list-style: none;
+				float: left;
+				border-left: 1px solid #ccc;
+				border-top: 1px solid #ccc;
+				width: 60px;
+				height: 70px;
+			}
+			.jkrigl {
+				border-right: 1px solid #ccc;
+			}
+			
+			.jkbottoml {
+				border-bottom: 1px solid #ccc;
+			}
+			
+			.cw-icon {
+				position: absolute;
+				width: 25px;
+				height: 25px;
+				top: 13px;
+				left: 19px;
+			}
+			
+			.cwww {
+				display: block;
+				width: 100%;
+				text-align: center;
+				height: 28px;
+				font-size: 14px;
+				padding-top: 45px;
+				position: relative;
+				text-decoration: none;
+				font: 12px/150% Arial, Verdana, "\5b8b\4f53";
+				color: #666;
+			}
+			
+			.mc-inner {
+				position: absolute;
+				top: 214px;
+				background: #ddd;
+				width: 245px;
+				height: 186px;
+				/*left: 38px;*/
+			}
+			
+			.mc-inner p {
+				display: none;
+			}
+			
+			#d1 {
+				width: 250px;
+				position: relative;
+				/*left: 10px;*/
+				margin: 30px auto;
+				overflow: hidden;
+			}
+		</style>
+	</head>
+
+	<body>
+		<div id="d1">
+			<ul>
+				<li class="jdkbicl">
+					<a class="cwww" href="#">
+						<i class="cw-icon" style="background: url(img/righticon.png) 0 0 no-repeat;"></i>
+						<span>话费</span>
+					</a>
+				</li>
+				<li>
+					<a class="cwww" href="#">
+						<i class="cw-icon" style="background: url(img/righticon.png) 0 -25px no-repeat;"></i>
+						<span>机票</span>
+						<i></i>
+					</a>
+				</li>
+				<li>
+					<a class="cwww" href="#">
+						<i class="cw-icon" style="background: url(img/righticon.png) 0 -50px no-repeat;"></i>
+						<span>电影票</span>
+					</a>
+				</li>
+				<li class="jkrigl">
+					<a class="cwww" href="#">
+						<i class="cw-icon" style="background: url(img/righticon.png) 0 -75px no-repeat;"></i>
+						<span>游戏</span>
+					</a>
+				</li>
+				<li>
+					<a class="cwww" href="#">
+						<i class="cw-icon" style="background: url(img/righticon.png) 0 -100px no-repeat;"></i>
+						<span>彩票</span>
+					</a>
+				</li>
+				<li>
+					<a class="cwww" href="#">
+						<i class="cw-icon" style="background: url(img/righticon.png) 0 -125px no-repeat;"></i>
+						<span>加油卡</span>
+					</a>
+				</li>
+				<li>
+					<a class="cwww" href="#">
+						<i class="cw-icon" style="background: url(img/righticon.png) 0 -150px no-repeat;"></i>
+						<span>酒店</span>
+					</a>
+				</li>
+				<li class="jkrigl">
+					<a class="cwww" href="#">
+						<i class="cw-icon" style="background: url(img/righticon.png) 0 -175px no-repeat;"></i>
+						<span>火车票</span>
+					</a>
+				</li>
+				<li class="jkbottoml">
+					<a class="cwww" href="#">
+						<i class="cw-icon" style="background: url(img/righticon.png) 0 -250px no-repeat;"></i>
+						<span>众筹</span>
+					</a>
+				</li>
+				<li class="jkbottoml">
+					<a class="cwww" href="#">
+						<i class="cw-icon" style="background: url(img/righticon.png) 0 -200px no-repeat;"></i>
+						<span>理财</span>
+					</a>
+				</li>
+				<li class="jkbottoml">
+					<a class="cwww" href="#">
+						<i class="cw-icon" style="background: url(img/righticon.png) 0 -275px no-repeat;"></i>
+						<span>礼品卡</span>
+					</a>
+				</li>
+				<li class="jkrigl jkbottoml">
+					<a class="cwww" href="#">
+						<i class="cw-icon" style="background: url(img/righticon.png) 0 -225px no-repeat;"></i>
+						<span>白条</span>
+					</a>
+				</li>
+			</ul>
+			<div class="mc-inner" id="mc-inner">
+				<p><span>1</span><span>流量充值</span><span>套餐变更</span></p>
+				<p><span>2</span><span>流量充值</span><span>套餐变更</span></p>
+				<p><span>3</span><span>流量充值</span><span>套餐变更</span></p>
+				<p><span>4</span><span>流量充值</span><span>套餐变更</span></p>
+			</div>
+		</div>
+
+	</body>
+	<script src="js/jso.js"></script>
+	<script type="text/javascript">
+		var ads = js.getidcla('d1', 'cwww');
+		var cws = js.getidcla('d1', 'cw-icon');
+		var d2 = document.getElementById("mc-inner");
+		var ps = document.getElementById("mc-inner").getElementsByTagName('p');
+		var timer = null;
+		var timer1 = null;
+		var num = 214;
+		var num1 = 45;
+		var n;
+		for (i = 0; i < 4; i++) {
+			ads[i].onmouseover = function() {
+				for (i = 0; i < 4; i++) {
+					if (ads[i] == this) {
+						chacol();
+						if(ads[i].style.paddingTop=='0px'){
+							ads[i].style.borderTop = '1px solid #c81623';
+						}
+						ps[i].style.display = 'block';
+						n=i;
+						timer = setInterval(function() {
+							num -= 4.5;
+							d2.style.top = num + 'px';
+							if (num <= 28) {
+								d2.style.top = '28px';
+								clearInterval(timer);
+							}
+						}, 10)
+
+						timer1 = setInterval(function() {
+							num1--;
+							if (num1 == 0) {
+									ads[n].style.borderTop = '1px solid #c81623';
+									cws[0].style.top = '-28px';
+									cws[1].style.top = '-28px';
+									cws[2].style.top = '-28px';
+									cws[3].style.top = '-28px';
+									clearInterval(timer1);
+							}
+							for (i = 0; i < ads.length; i++) {
+								ads[i].style.paddingTop = num1;
+							}
+						}, 10)
+					} else {
+						ps[i].style.display = '';
+					}
+				}
+
+			}
+		}
+		
+		function chacol(){
+			for(j=0;j<4;j++){
+				ads[j].style.borderTop='';
+			}
+		}
+	</script>
+
+</html>
